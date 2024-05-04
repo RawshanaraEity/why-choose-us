@@ -1,8 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .title h2 {
     font-size: 48px;
     font-family: shape;
     font-weight: 600;
     line-height: 57px;
+    padding-bottom: 50px;
+    padding-top: 60px;
     color:#1C1C1C;
     display: flex;
     align-items: center;
@@ -14,13 +20,16 @@
   }
   .card-container{
     display: flex;
+    justify-content: center;
     gap: 47px;
+    margin-bottom: 47px;
   
   }
   .card {
-    width: 510px;
+    width: 511px;
     height: 340px;
     position: relative;
+    cursor: pointer;
   }
   .card img {
     width: 100%;
@@ -48,7 +57,53 @@
     font-size: 28px;
     font-weight: 600;
     background-color: rgba(0, .59, 0, 1,);
+    margin-bottom: 25px;
   }
   .card .card-title span{
     color: #FFC758;
   }
+  .card:hover .card-title{
+    display: none;
+  }
+
+.single-card-hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(17, 74, 141, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.card:hover .single-card-hover{
+  opacity: 1;
+  width: 100%;
+}
+.single-card-hover h3{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.single-card-hover h3 span{
+  color: #FFC758;
+ 
+}
+.single-card-hover p{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.hover-content{
+    width: 425px; 
+}
