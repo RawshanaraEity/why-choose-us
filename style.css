@@ -2,9 +2,30 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(Font/gotham/gotham/GothamBold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url(Font/gotham/gotham/GothamLight.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: "Gotham";
+   
+}
+/* h2{
+    font-weight: 600;
+}
+ h3{
+    font-weight: 700;
+} */
 .title h2 {
     font-size: 48px;
-    font-family: shape;
     font-weight: 600;
     line-height: 57px;
     padding-bottom: 50px;
